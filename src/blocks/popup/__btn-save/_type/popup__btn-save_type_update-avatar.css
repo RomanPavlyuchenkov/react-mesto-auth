@@ -1,0 +1,11 @@
+.popup__btn-save_type_update-avatar{
+  margin-top: 10px;
+  width: 358px;
+}
+
+
+@media (max-width:600px){
+  .popup__btn-save_type_update-avatar{
+    width: 236px;
+  }
+}

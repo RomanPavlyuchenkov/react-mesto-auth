@@ -1,0 +1,25 @@
+.profile__add-button{
+  width: 150px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 14px 64px;
+  cursor: pointer;
+  transition:  0.2s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.profile__add-button:hover{
+  opacity: 0.6;
+}
+
+@media (max-width:690px){
+  .profile__add-button{
+    width: 282px;
+  }
+}

@@ -1,0 +1,11 @@
+.popup__btn-save_type_delete-card{
+  width: 358px;
+  margin-top: -7px;
+}
+
+@media (max-width:600px){
+  .popup__btn-save_type_delete-card{
+    width: 236px;
+    margin-top: -40px;
+  }
+}

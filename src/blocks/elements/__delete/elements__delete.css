@@ -1,0 +1,16 @@
+.elements__delete{
+  width: 18px;
+  height: 19px;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  transition:  0.2s ease-out;
+}
+
+.elements__delete:hover{
+  opacity: 0.5;
+}

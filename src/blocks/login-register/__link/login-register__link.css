@@ -1,0 +1,12 @@
+.login-register__link{
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    margin: 15px auto ;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
