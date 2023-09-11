@@ -226,6 +226,16 @@ function App() {
             path="/sign-up"
             element={<Register onRegister={handleRegister} />}
           />
+          <Route
+            path="*"
+            element={
+              loggedIn ? (
+                <Navigate to="/" replace />
+              ) : (
+                <Navigate to="/sign-in" replace />
+              )
+            }
+          />
         </Routes>
         {loggedIn && <Footer />}
         <EditAvatarPopup
