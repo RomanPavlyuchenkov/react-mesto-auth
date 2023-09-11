@@ -7,4 +7,14 @@
     font-style: normal;
     font-weight: 500;
     line-height: 22px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+@media(max-width:680px){
+    .header__email{
+        margin: 0 ;
+    }
 }

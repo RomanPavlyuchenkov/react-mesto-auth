@@ -1,0 +1,10 @@
+.header__mobill-btn{
+    background: transparent;
+    border: none;
+    padding: 0;
+    visibility: hidden;
+}
+
+@media (max-width:690px){
+    .header__mobill-btn{visibility: visible;}
+}

@@ -3,3 +3,10 @@
     padding: 20px 0 80px;
     margin: 0 auto;
 }
+
+@media (max-width:690px){
+    .login-register__container{
+    max-width: 260px;
+    }
+  }
+  

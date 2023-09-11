@@ -8,6 +8,11 @@
 @import url(./blocks/header/__links/header__links.css);
 @import url(./blocks/header/__email/header__email.css);
 @import url(./blocks/header/__exit/header__exit.css);
+@import url(./blocks/header/__email-exit/header__email-exit.css);
+@import url(./blocks/header/_type/header_type_mobill.css);
+@import url(./blocks/header/__email-exit/_type_mobill/header__email-exit_type_mobill.css);
+@import url(./blocks/header/__mobill-btn/header__mobill-btn.css);
+@import url(./blocks/header/__mobill-btn/header__mobill-btn_hidden.css);
 /* main */
 /* profile */
 @import url(./blocks/profile/profile.css);

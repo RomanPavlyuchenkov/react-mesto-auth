@@ -6,11 +6,12 @@
   border-bottom: 1px solid rgba(54, 54, 54, 0.7);
   display: flex;
   justify-content: space-between;
-
+  position: relative;
 }
 
 @media (max-width:690px){
   .header{
-    padding: 28px 0 32px 27px;
+    padding: 28px 27px 32px 27px;
+    transition: all .3s ease;
   }
 }

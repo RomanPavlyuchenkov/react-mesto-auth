@@ -45,14 +45,18 @@ function App() {
   };
 
   const handleLogin = ({ email, password }) => {
-    return login({ email, password }).then((res) => {
-      if (res.token) {
-        setLoggedIn(true);
-        localStorage.setItem("token", res.token);
-        navigate("/");
-        setIsHeaderEmail(email);
-      }
-    });
+    return login({ email, password })
+      .then((res) => {
+        if (res.token) {
+          setLoggedIn(true);
+          localStorage.setItem("token", res.token);
+          navigate("/");
+          setIsHeaderEmail(email);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
   // checkToken  вызывается при монтировании App и отправляет запрос  если jwt есть в хранилище
   React.useEffect(() => {
@@ -72,7 +76,7 @@ function App() {
     }
   }, []);
   // удаление токена и выход
-  const handleSignout = (res) => {
+  const handleSignout = () => {
     setLoggedIn(false);
     localStorage.removeItem("token");
     navigate("/sign-in");
@@ -203,7 +207,11 @@ function App() {
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <div className="page">
-        <Header email={isHeaderEmail} onSignOut={handleSignout} />
+        <Header
+          email={isHeaderEmail}
+          onSignOut={handleSignout}
+          stateLogin={loggedIn}
+        />
         <Routes>
           <Route
             path="/"

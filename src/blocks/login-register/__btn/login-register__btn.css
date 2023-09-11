@@ -3,3 +3,9 @@
     color: #000000;
     margin-top: 216px;
 }
+
+@media (max-width:690px){
+    .login-register__btn{
+        margin-top: 170px;
+    }
+  }

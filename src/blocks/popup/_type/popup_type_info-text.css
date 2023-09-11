@@ -8,3 +8,10 @@
     line-height: normal;
     margin: 0;
 }
+
+
+@media (max-width:690px){
+    .popup_type_info-text{
+        font-size: 20px;
+    }
+}
